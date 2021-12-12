@@ -317,6 +317,18 @@ public Screen(String resolution,int refereshRate,int responseTime){
 ```
 The attributes will be assigned values when creating a class instance\
 ## Step 10
+created a driver class ``Driver_Sreen`` for Screen to test the functionality\
+
+Code snippet:
+```java
+public class Driver_Screen {
+   public static void main(String[] args) {                //main method 
+	Screen screen =new Screen("111x540", 20, 30);      // instance of the class 
+	System.out.println(screen.toString());	           //get the details of the screen 
+   }	
+}
+```
+
 ## Step 11 
 ## Step 12
 ## Step 13
