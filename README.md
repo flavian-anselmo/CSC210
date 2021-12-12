@@ -234,6 +234,16 @@ System.out.println(audioPlayer.toString());
 ```
 
 ## Step 7 
+The Production facility is also creating Movieplayer and since it will contain screens we created 2 different flavors of the screens\
+This was done by the use of Enums``MovieType``  which was declared in the class ```Product``` . \
+There are two types of screens for our scenario that is ``LCD``/ and ``LED``.\
+Code snippet:
+```java
+public enum MovieType{
+   LCD,
+   LED;
+}
+```
 ## Step 8 
 ## Step 9
 ## Step 10
