@@ -163,6 +163,32 @@ public Audioplayer(String name,String audioSpecification) {
 }
 
 ```
+The methods from the ```MultiController``` interface were implemented as follows:\
+Code Snippet:\
+```java
+@Override
+public void play() {
+		
+	System.out.println("Play-Audio ");
+}
+
+@Override
+public void stop() {
+	System.out.println("Stop-Audio");
+		
+}
+
+@Override
+public void previous() {
+	System.out.println("<<<<Previous");		
+}
+
+@Override
+public void next() {
+	System.out.println("Next>>>>");
+		
+}
+```
 
 ## Step 6 
 ## Step 7 
