@@ -1,13 +1,13 @@
 # CSC210-OOP2-LAB-REPORT
 ## Group Members
-|Name   |Registration   |  
-|---|---|
-|Anselemo flavian   |  **COM/0039/20**  |  
-| Brian Leposo   | **COM/0024/20**  |  
-| Joy Nafula    |**COM/0059/20**   |   
-| Cyrus Mwendwa   |**COM/0013/20**   |   
-| Titus Shikomela   |**COM/0035/20**   |   
-| Clinton Otieno    |**COM/0061/20**   |   
+|id|Name   |Registration   |  
+|---|---|---|
+|0|Anselemo flavian   |  **COM/0039/20**  |  
+|1| Brian Leposo   | **COM/0024/20**  |  
+|2| Joy Nafula    |**COM/0059/20**   |   
+|3| Cyrus Mwendwa   |**COM/0013/20**   |   
+|4| Titus Shikomela   |**COM/0035/20**   |   
+|5| Clinton Otieno    |**COM/0061/20**   |   
 
 ## Scenario of scaiproduction
 ScaiProduction Ltd are specialists in producing production line manufacturing
