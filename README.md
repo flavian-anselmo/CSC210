@@ -261,9 +261,61 @@ public interface ScreenSpec {
    public int getResponseTime();
 }
 ```
-
-
 ## Step 9
+We then created a ``Screen`` class thatimplemets the ``ScreenSpec`` interface.\
+This means that all the 3 methods in the interface will be implemented in the ``Screen`` class\
+Code snippet:
+```java
+public class Screen implements ScreenSpec {
+   String resolution;
+   int refreshRate;
+   int responseTime;
+
+   public Screen(String resolution,int refereshRate,int responseTime){
+	this.resolution=resolution;
+	this.responseTime=responseTime;
+	this.refreshRate=refereshRate;
+   }
+
+   @Override
+   public String getResolution() {
+	
+	return this.resolution;
+   }
+
+   @Override
+   public int getRefreshRate() {
+	return refreshRate;
+   }
+
+   @Override
+   public int getResponseTime() {
+	
+	return responseTime;
+   }
+
+   public String toString() {
+       return "Resolution: "+ this.resolution+"RefreshRate: "+this.refreshRate+"ResponseTime:"+"-->"+this.responseTime;
+   }	
+}
+```
+A ``toString()`` method is created to display the screen details. The method is of ``String`` type\
+Code Snippet:
+```java
+public String toString() {
+    return "Resolution: "+ this.resolution+"RefreshRate: "+this.refreshRate+"ResponseTime:"+"-->"+this.responseTime;
+}	
+```
+The class has a constrator that is used during instantiation of an object\
+Code Snippet:
+```java
+public Screen(String resolution,int refereshRate,int responseTime){
+	this.resolution=resolution;
+	this.responseTime=responseTime;
+	this.refreshRate=refereshRate;
+}
+```
+The attributes will be assigned values when creating a class instance\
 ## Step 10
 ## Step 11 
 ## Step 12
