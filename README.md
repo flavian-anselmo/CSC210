@@ -198,6 +198,41 @@ public String toString(){
 ```
 
 ## Step 6 
+Created a Driver class ``Driver_Audioplayer`` to test the functionality of the AudioPlayer\
+A Driver class usually has a main function where excecution begins\
+Tested the functionality by making a class instance ``audioplayer``..\
+Example of the instance\
+```java
+Audioplayer audioPlayer=new Audioplayer("HeadShot", "HD");
+
+```
+Using the class instance we can now call the 4 methods \
+The methods will be accessed as shown by the code snippets below\
+```java
+audioPlayer.play();
+audioPlayer.next();
+audioPlayer.stop();
+audioPlayer.previous();
+```
+Code Snippet to the Driver class\
+```java
+public class Driver_Audioplayer {
+  public static void main(String[] args) {
+     Audioplayer audioPlayer = new Audioplayer("HeadShot", "HD");
+     audioPlayer.play();
+     audioPlayer.next();
+     audioPlayer.stop();
+     audioPlayer.previous();	
+  }	
+}
+
+```
+To print out the details of the audio player, We called the method ``toString()`` .\
+Code snippet:
+```java
+System.out.println(audioPlayer.toString());
+```
+
 ## Step 7 
 ## Step 8 
 ## Step 9
