@@ -142,6 +142,28 @@ public interface MultimediaControl {
 }
 ```
 ## Step 5
+An ``AudioPlayer`` class was created\
+This class implemented the ``MultiController`` interface and is a subclass of ``Product`` \
+```java
+public class Audioplayer extends Product implements MultimediaControl 
+```
+Two fields were added which are listed below with code snippets\
+
+```java
+public String audioSpecification;
+public ItemType mediaType;
+```
+A constractor was created to be used during instatiation.The constractor inherited the ``name`` field from the Parent constractor \
+Code Snippet:\
+```java
+public Audioplayer(String name,String audioSpecification) {
+   super(name);
+   this.audioSpecification = audioSpecification;
+   this.mediaType=ItemType.Audio;
+}
+
+```
+
 ## Step 6 
 ## Step 7 
 ## Step 8 
