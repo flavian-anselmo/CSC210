@@ -189,6 +189,13 @@ public void next() {
 		
 }
 ```
+Added a ``toString()`` method that uses another method from the parent class\
+Code Snippet:
+```java
+public String toString(){
+    return super.toString()+"AudioSpec: "+this.audioSpecification+"\n"+"AudioType: "+this.mediaType+"\n";
+}
+```
 
 ## Step 6 
 ## Step 7 
