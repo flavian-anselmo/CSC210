@@ -126,6 +126,21 @@ public String toString() {
 }	
 ```
 ## Step 4
+This was a short step where we created an Interface called ```MultimediaControl``` that will be responsible for providing 4 methods 
+- ```play()```
+- ```stop()```
+- ```previous()```
+- ```next()```\
+Code snippet to the interface is shown below:
+```java
+
+public interface MultimediaControl {
+   public void play();
+   public void stop();
+   public void previous();
+   public void next();	
+}
+```
 ## Step 5
 ## Step 6 
 ## Step 7 
