@@ -245,6 +245,24 @@ public enum MovieType{
 }
 ```
 ## Step 8 
+Created interface ``ScreenSpec`` as instracted from the problem statement\
+The interface has 3 methods that will be implemeted by other classes \
+The method declarations are:
+```java
+public String getResolution();
+public int getRefreshRate();
+public int getResponseTime();
+```
+``ScreenSpec`` interface creation:
+```java
+public interface ScreenSpec {
+   public String getResolution();
+   public int getRefreshRate();
+   public int getResponseTime();
+}
+```
+
+
 ## Step 9
 ## Step 10
 ## Step 11 
