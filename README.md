@@ -320,9 +320,9 @@ The class has a constrator that is used during instantiation of an object\
 Code Snippet:
 ```java
 public Screen(String resolution,int refereshRate,int responseTime){
-	this.resolution=resolution;
-	this.responseTime=responseTime;
-	this.refreshRate=refereshRate;
+     this.resolution=resolution;
+     this.responseTime=responseTime;
+     this.refreshRate=refereshRate;
 }
 ```
 The attributes will be assigned values when creating a class instance\
@@ -338,9 +338,87 @@ public class Driver_Screen {
    }	
 }
 ```
-
 ## Step 11 
+Class ``MoviePlayer`` created which extends ``Product`` and implements ``MultimediaControl`` \
+```java
+public class MoviePlayer extends Product implements MultimediaControl
+```
+The class has 2 attributes ``screen`` and ``monitorType`` which are assigned appropriate types to them 
+For our case thay are assigned as shown in the below code snippet:\
+```java
+Screen screen;
+MovieType monitorType;
+```
+The class uses a field ``name`` from its parent class.This is displayed in the class constractor\
+```java
+public MoviePlayer(String name,Screen screen,MovieType monitorType) {
+    super(name);
+    this.screen = screen;
+    this.monitorType=monitorType;		
+}
+```
+The class implements all the methods from the interface ``MultimediaControl``\
+code snippet:\
+```java
+@Override
+public void play() {
+    System.out.println("Play--Video");
+		
+}
+
+@Override
+public void stop() {
+    System.out.println("Stop--Video");	
+}
+
+@Override
+public void previous() {
+    System.out.println("<<<<<Previous");		
+}
+
+@Override
+public void next() {
+    System.out.println("next>>>>>>>");
+		
+}
+```
+The Details of the Movieplayer can be displayed in the console by the ``toString()`` method 
+```java
+public String toString() {
+    return super.toString()+"\n"+"MonitorType: "+monitorType+"\n"+"ScreenDetails: --->"+this.screen.toString();
+}
+```
 ## Step 12
+Created a Driver class ``Driver_MoviePlayer`` to test the functionality of the ``MoviePlayer`` class \
+```java
+
+public class Driver_MoviePlayer {
+    public static void main(String[] args) { 
+    	//first class instance 
+	Screen screen=new Screen("102x1", 30, 40);
+	MoviePlayer mvp=new MoviePlayer("Silicon Valley", screen, MovieType.LCD);
+	System.out.println(mvp.toString());
+	
+
+	//second class instance 
+	Screen screen2=new Screen("102x1", 30, 40);
+	MoviePlayer mvp2=new MoviePlayer("Motley Crew ", screen2, MovieType.LED);
+	System.out.println(mvp2.toString());
+	
+   }
+	
+}
+```
+Before creating the instance a ``Screen`` class instance was created to be passed in ``MoviePlayer`` constractor \
+eg:
+```java
+Screen screen=new Screen("102x1", 30, 40);
+```
+The monitorType was fetched from the Enum ``MovieType``, which can be ``MovieType.LCD`` or ``MovieType.LED
+Display the movie Details using the print statement below \
+```java
+System.out.println(mvp2.toString());
+```
 ## Step 13
 ## Step 14 
 ## Step 15 & 16
