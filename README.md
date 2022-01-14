@@ -420,10 +420,90 @@ Display the movie Details using the print statement below \
 System.out.println(mvp2.toString());
 ```
 ## Step 13
+```java
+public class Driver_movie_audio {
+	public static void main(String[] args) {
+		/**
+		 * @step--13
+		 * demonstartes that any class that implements 
+		 * the multicontrol interface would be able to 
+		 * be instantiated and use its methods used no matter 
+		 * if its an audio or movie player 
+		 */
+	
+		Audioplayer aud_p=new Audioplayer("a", "cgctctc");
+		aud_p.play();
+		aud_p.previous();
+		aud_p.next();
+		aud_p.stop();
+		
+		Screen scrn=new Screen("120x100", 0, 0);
+		MoviePlayer mov_p=new MoviePlayer("b",scrn, MovieType.LCD);
+		mov_p.play();
+		mov_p.stop();
+		mov_p.previous();
+		mov_p.next();
+
+	}
+}
+
+```
+demonstartes that any class that implements the multicontrol 
+interface would be able to be instantiated and use its methods used no matter  if its an audio or movie player 
 ## Step 14 
+We created the a class ``Compare`` that implemets the Interface ``Comparator``
+```java
+public class Compare implements Comparator<Product> 
+```
+Inside the class we have a method compare that handles all the comparisons.Its an overriden method from the 
+Interface ``Comparator``
+```java
+@Override
+public int compare(Product arg0, Product arg1) {
+   return  arg0.getName().compareTo(arg0.getName());
+}
+```
+we imported ``java.util.Comparator``
+The whole class implementstion is as shown below.
+```java
+
+
+public class Compare implements Comparator<Product> {
+  @Override
+  public int compare(Product arg0, Product arg1) {
+      return  arg0.getName().compareTo(arg0.getName());
+  }
+}
+```
+
 ## Step 15 & 16
-
-
-
-
+Using class ``Compare`` we can sort the products then use a ``for_loop`` to list them.
+We created a object ``com`` as shown 
+```java
+Comparator<Product> com=new Compare();
+```
+Sort the items as shown below
+```java
+Collections.sort(Product.products,com);
+```
+for loop that iterates in a Big O(N) time compelexity and lists the products.
+```java
+for(Product l :Product.products){
+  System.out.println(l);
+  System.out.println("-------------------------------");	
+}
+```
+The whole print functions is as shown below.It was created inside the driver class.
+```java
+public static void  print(){
+  Comparator<Product> com=new Compare();
+  Collections.sort(Product.products,com);
+  //sorted 
+  for(Product l :Product.products){
+    System.out.println(l);
+    System.out.println("-------------------------------");	
+  }
+}
+```
+                                                ``END``
 
