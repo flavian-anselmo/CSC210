@@ -496,7 +496,7 @@ for(Product l :Product.products){
 The whole print functions is as shown below.It was created inside the driver class.
 ```java
 public static void  print(){
-  Comparator<Product> com=new Compare();
+  Comparator<Product> com = new Compare();
   Collections.sort(Product.products,com);
   //sorted 
   for(Product l :Product.products){
